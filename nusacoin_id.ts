@@ -513,39 +513,39 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard...</source>
-        <translation>Muat PSBT dari papanklip...</translation>
+        <translation>Muat PSBT dari papeunklip...</translation>
     </message>
     <message>
         <source>Load Partially Signed Nusacoin Transaction from clipboard</source>
-        <translation>Memuat Transaksi PSBT dari papanklip</translation>
+        <translation>Memuat Transaksi PSBT dari papeunklip</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;Kirim</translation>
+        <translation>&amp;Kirem</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;Menerima</translation>
+        <translation>&amp;Teurimong</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Tampilkan / Sembunyikan</translation>
+        <translation>&amp;Peuleumah / Peusom</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Tampilkan atau sembunyikan jendela utama</translation>
+        <translation>Peuleumah atawa peusöm jeundela utama</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Enkripsi private key yang dimiliki dompet Anda</translation>
+        <translation>Enkripsi kunci pribadi nyang na bak dompet droeneuh</translation>
     </message>
     <message>
         <source>Sign messages with your Nusacoin addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Nusacoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+        <translation>Tandatangani saboh pesan ngon neupakek alamat Nusacoin droeneuh keu bukti droeneuh nakeuh pemilik alamat nyan</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Nusacoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Nusacoin tertentu</translation>
+        <translation>Verifikasi pesan nyan untuk pastikan bahwa pesan nyan ditandatangani le alamat Nusacoin tertentu</translation>
     </message>
     <message>
         <source>Load Partially Signed Nusacoin Transaction</source>
@@ -569,15 +569,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Request payments (generates QR codes and nusacoin: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan nusacoin: URIs)</translation>
+        <translation>Peulaku peubayeuë (peugot kode QR ngon nusacoin:URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Tampilkan daftar alamat dan label yang terkirim</translation>
+        <translation>Peuleumah daftar alamat ngon label nyang ka geukirém</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Tampilkan daftar alamat dan label yang diterima</translation>
+        <translation>Peuleumah daftar alamat ngon label nyang ka teurimong</translation>
     </message>
     <message>
         <source>Open a nusacoin: URI</source>
@@ -593,63 +593,63 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Mask the values in the Overview tab</source>
-        <translation>Sensor jumlah saldo pada halaman kilasan</translation>
+        <translation>Sensor jumlah saldo bak halaman ikhtisar</translation>
     </message>
     <message>
         <source>Show Peers tab</source>
-        <translation>Tampilkan Tab Peer</translation>
+        <translation>Peutunyok Tab Rakan</translation>
     </message>
     <message>
         <source>Disable network activity</source>
-        <translation>Matikan aktifitas jaringan</translation>
+        <translation>Peumate kegiatan jaringan</translation>
     </message>
     <message>
         <source>Enable network activity</source>
-        <translation>Nyalakan aktifitas jaringan</translation>
+        <translation>Peuhudep kegiatan jaringan</translation>
     </message>
     <message>
         <source>Click for more actions.</source>
-        <translation>Klik untuk aksi lanjutan.</translation>
+        <translation>Klik keu tindakan selanjut jih.</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Nusacoin network.</source>
         <translation>
-            <numerusform>%n koneksi aktif ke jaringan Nusacoin.</numerusform>
+            <numerusform>%n koneksi aktif keu jaringan Nusacoin.</numerusform>
         </translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
-        <translation>Pengindeksan blok pada disk ...</translation>
+        <translation>Blok indeksasi bak disk ...</translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
-        <translation>Memproses blok pada disk ...</translation>
+        <translation>Meuproses blok bak disk ...</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation>
-            <numerusform>%n blok dari riwayat transaksi diproses.</numerusform>
+            <numerusform>%n blok riwayat transaksi nyang ka geuproses.</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>kurang %1</translation>
+        <translation>kureung %1</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Blok terakhir yang diterima %1 lalu.</translation>
+        <translation>Blok nyang akhé neuteurimong nakeuh %1 nyang ka u likôt.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transaksi setelah blok ini belum terlihat.</translation>
+        <translation>Transaksi lheuh blok nyoe gohlom deuh.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Terjadi sebuah kesalahan</translation>
+        <translation>Na keusalahan</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Peringatan</translation>
+        <translation>Nyang peuingat</translation>
     </message>
     <message>
         <source>Information</source>
@@ -657,15 +657,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>Terbaru</translation>
+        <translation>Paleng baro</translation>
     </message>
     <message>
         <source>&amp;Sending addresses</source>
-        <translation>Alamat &amp;Pengirim</translation>
+        <translation>Alamat &amp;Pengirem</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
-        <translation>Alamat &amp;Penerima</translation>
+        <translation>Alamat &amp;Penerimeung</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -673,7 +673,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Open a wallet</source>
-        <translation>Buka sebuah dompet</translation>
+        <translation>Buka saboeh dompet</translation>
     </message>
     <message>
         <source>Create Wallet...</source>
@@ -681,35 +681,35 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Create a new wallet</source>
-        <translation>Buat sebuah dompet baru</translation>
+        <translation>Buat seboeh dompet baru</translation>
     </message>
     <message>
         <source>Close Wallet...</source>
-        <translation>Tutup Dompet...</translation>
+        <translation>Tutop Dompet...</translation>
     </message>
     <message>
         <source>Close All Wallets...</source>
-        <translation>Tutup Semua Dompet...</translation>
+        <translation>Tutop Semua Dompet...</translation>
     </message>
     <message>
         <source>Close wallet</source>
-        <translation>Tutup dompet</translation>
+        <translation>Tutop dompet</translation>
     </message>
     <message>
         <source>Close all wallets</source>
-        <translation>Tutup semua dompet</translation>
+        <translation>Tutop mandum dompet</translation>
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Nusacoin command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Nusacoin yang memungkinkan</translation>
+        <translation>Peuleumah %1 pesan bantuan keu meurumpok daftar kemungkenan opsi barih komando Nusacoin.</translation>
     </message>
     <message>
         <source>default wallet</source>
-        <translation>wallet default</translation>
+        <translation>dompet bawaan</translation>
     </message>
     <message>
         <source>No wallets available</source>
-        <translation>Tidak ada wallet tersedia</translation>
+        <translation>Hana dompet nyang na</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -717,7 +717,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>&amp;Minimize</source>
-        <translation>Minimalkan Jendela</translation>
+        <translation>Peukureueng Jendela</translation>
     </message>
     <message>
         <source>Zoom</source>
@@ -733,11 +733,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Connecting to peers...</source>
-        <translation>Menghubungkan ke peer...</translation>
+        <translation>Meuhubong ngon rakan-rakan...</translation>
     </message>
     <message>
         <source>Catching up...</source>
-        <translation>Mengejar...</translation>
+        <translation>Pagap...</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -781,19 +781,19 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Transaksi terkirim</translation>
+        <translation>transaksi ka geukirém</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Transaksi diterima</translation>
+        <translation>Transaksi ka geuterimong</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>Pembuatan kunci HD &lt;b&gt;diaktifkan&lt;/b&gt;</translation>
+        <translation>Peugot kunci HD &lt;b&gt;diaktifkan&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Pembuatan kunci HD &lt;b&gt;dinonaktifkan&lt;/b&gt;</translation>
+        <translation>Peugot kunci HD &lt;b&gt;dinonaktifkan&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -801,15 +801,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terbuka&lt;/b&gt;</translation>
+        <translation>Dompet saat nyoe &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;teubuka&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
+        <translation>Dompet saat nyoe &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;teugunci&lt;/b&gt;</translation>
     </message>
     <message>
         <source>A fatal error occurred. Nusacoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi Kesalahan Fatal. Nusacoin Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
+        <translation>Saboh keusalahan fatal ka teudjadi. Nusacoin hana jeut geulanjutkan deungon aman dan akan geuteubiet.</translation>
     </message>
 </context>
 <context>
@@ -820,7 +820,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Kuantitas:</translation>
+        <translation>Kuantitah:</translation>
     </message>
     <message>
         <source>Bytes:</source>
@@ -840,7 +840,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Dengan Biaya:</translation>
+        <translation>Deungen Biaya:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -848,7 +848,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>(Tidak)memilih semua</translation>
+        <translation>(Hana)pileh mandum</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -864,15 +864,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Received with label</source>
-        <translation>Diterima dengan label</translation>
+        <translation>Teurimong ngon label</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>Diterima dengan alamat</translation>
+        <translation>Teurimong ngon alamat</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Tanggal</translation>
+        <translation>Tanggai</translation>
     </message>
     <message>
         <source>Confirmations</source>
@@ -888,71 +888,71 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Salin label</translation>
+        <translation>Salen label</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Salin Jumlah</translation>
+        <translation>Salen Jumlah</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Salin ID Transaksi</translation>
+        <translation>Salen ID Transaksi</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Kunci Yang Tidak Digunakan</translation>
+        <translation>Kunci nyang hana geupakek</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Buka Kunci Yang Tidak Digunakan</translation>
+        <translation>Buka Kunci nyang hana geupakek</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Salin Kuantitas</translation>
+        <translation>Salen Kuantitas</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Salin biaya</translation>
+        <translation>Salen biaya</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Salin Setelah Upah</translation>
+        <translation>Salin Lheuh Upah</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Salin bytes</translation>
+        <translation>Salen bytes</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Salin jumlah yang lebih kecil</translation>
+        <translation>Salen jumlah nyang leubeh ubeut</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Salin Perubahan</translation>
+        <translation>Salen Perubahan</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation>(%1 terkunci)</translation>
+        <translation>(%1 teugunci)</translation>
     </message>
     <message>
         <source>yes</source>
-        <translation>Ya</translation>
+        <translation>Jeut</translation>
     </message>
     <message>
         <source>no</source>
-        <translation>Tidak</translation>
+        <translation>Bek</translation>
     </message>
     <message>
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation>Label ini akan menjadi merah apabila penerima menerima jumlah yang lebih kecil daripada ambang habuk semasa.</translation>
+        <translation>Label nyoe meuubah jeuet keu mirah meunyoe na nyang teurimong jumlah nyang leubeh ubit nibak ambang abe jinoe.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Dapat bervariasi +/- %1 satoshi per input.</translation>
+        <translation>Mungken meubida-bida +/- %1 satoshi per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(tidak ada label)</translation>
+        <translation>(hana label)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
@@ -967,11 +967,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <name>CreateWalletDialog</name>
     <message>
         <source>Create Wallet</source>
-        <translation>Buat Dompet</translation>
+        <translation>Peugot Dompet</translation>
     </message>
     <message>
         <source>Wallet Name</source>
-        <translation>Nama Dompet</translation>
+        <translation>Nan Dompet</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -979,11 +979,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation>Opsi Lanjutan</translation>
+        <translation>Pilihan Lanjutan</translation>
     </message>
     <message>
         <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
-        <translation>Enkripsi dompet. Dompet akan dienkripsi dengan sandi frasa pilihan Anda.</translation>
+        <translation>Enkripsi dompet nyan. Dompet nyan akan dienkripsi ngon frasa sandi nyang droeneuh pileh.</translation>
     </message>
     <message>
         <source>Encrypt Wallet</source>
@@ -991,15 +991,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
-        <translation>Nonaktifkan kunci pribadi untuk dompet ini. Dompet dengan kunci pribadi yang dinonaktifkan tidak akan memiliki kunci pribadi dan tidak dapat memiliki benih HD atau kunci pribadi yang diimpor. Ini sangat ideal untuk dompet khusus.</translation>
+        <translation>Nonaktifkan kunci pribadi keu dompet nyoe. Dompet nyang na kunci pribadi nyang hana meuguna hana akan na kunci pribadi dan hana jeuet ji import benih HD atawa kunci pribadi. Nyoe ideal keu dompet khusus.</translation>
     </message>
     <message>
         <source>Disable Private Keys</source>
-        <translation>Matikan kunci pribadi</translation>
+        <translation>Peumaté kunci pribadi</translation>
     </message>
     <message>
         <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
-        <translation>Buat dompet kosong. Dompet kosong awalnya tidak memiliki kunci atau skrip pribadi. Kunci dan alamat pribadi dapat diimpor, atau benih HD dapat disetel, di lain waktu.</translation>
+        <translation>Peugot dompet kosong. Dompet kosong awai jih hana kunci pribadi atawa skrip. Kunci ngon alamat pribadi jeuet neu import, atawa HD seeds jeuet neu set, bak watee nyang akan teuka.</translation>
     </message>
     <message>
         <source>Make Blank Wallet</source>
