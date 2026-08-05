@@ -82,7 +82,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Salin Alamat</translation>
+        <translation>&amp;Salen Alamat</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -106,7 +106,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Terjadi kesalahan saat mencoba menyimpan daftar alamat ke %1. Silakan coba lagi.</translation>
+        <translation>Na keusalahan watee neucuba simpan dapeuta alamat keu %1. Neu cuba lom.</translation>
     </message>
 </context>
 <context>
@@ -121,7 +121,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(tidak ada label)</translation>
+        <translation>(hana label)</translation>
     </message>
 </context>
 <context>
@@ -140,15 +140,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Masukkan kata sandi</translation>
+        <translation>Tapeutamong kata sandi</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Kata sandi baru</translation>
+        <translation>Kata sandi baro</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Ulangi kata sandi baru</translation>
+        <translation>Neu ulang kata sandi baro</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -156,7 +156,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Operasi ini memerlukan kata sandi dompet Anda untuk membuka dompet.</translation>
+        <translation>Operasi nyoe peureulee kata sandi dompet droeneuh keu neubuka dompet.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Operasi ini memerlukan kata sandi dompet Anda untuk mendekripsikan dompet.</translation>
+        <translation>Operasi nyoe peureulee kata sandi dompet droeneuh untuk neudekripsi dompet.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -176,31 +176,31 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Konfirmasi pengenkripsian dompet</translation>
+        <translation>Konfirmasi enkripsi dompet</translation>
     </message>
     <message>
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Masukkan sandi frasa baru untuk dompet.&lt;br/&gt;Harap gunakan sandi frasa &lt;b&gt;sepuluh karakter acak atau lebih&lt;/b&gt;, atau &lt;b&gt;delapan kata atau lebih&lt;/b&gt;.</translation>
+        <translation>Tapeutamong kata sandi baroe keu dompet.&lt;br/&gt;Harap neupakek sandi frasa &lt;b&gt;siploh atawa leubeh karakter acak&lt;/b&gt;, atawa &lt;b&gt;lapan boh kata atawa leubeh&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
-        <translation>Masukkan sandi frasa lama dan sandi frasa baru untuk dompet</translation>
+        <translation>Tapeutamong kata sandi jameun ngon kata sandi baroe keu dompet.</translation>
     </message>
     <message>
         <source>Show passphrase</source>
-        <translation>Tampilkan passphrase</translation>
+        <translation>Peuleumah kata sandi</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will </source>
-        <translation>Peringatan: Jika Anda mengenkripsi dompet dan lupa kata sandi Anda, Anda akan </translation>
+        <translation>Peringatan: Meunyo droeneuh neu enkripsi dompet dan tuwoe kata sandi, droeneuh akan </translation>
     </message>
     <message>
         <source>LOSE ALL OF YOUR NUX!</source>
-        <translation>KEHILANGAN SEMUA NUX ANDA!</translation>
+        <translation>GADOEH SEMUA NUX DRONEE!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
+        <translation>Ka yakin droeneuh neuk enkripsi dompet droeneuh?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -208,7 +208,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>PENTING: Backup sebelumnya yang Anda buat dari file dompet Anda harus diganti dengan file dompet terenkripsi yang baru dibuat. Demi keamanan, backup file dompet sebelumnya yang tidak dienkripsi sebelumnya akan menjadi tidak berguna begitu Anda mulai menggunakan dompet terenkripsi yang baru.</translation>
+        <translation>PENTING: Backup-backup nyang ka neu peugot seugolom jih dari file dompet droeneuh wajeb neu gantoe ngon file dompet nyang baroe neu peugot enkripsi. Keu alasan keamanan, mandum backup file dompet droeneuh nyang hana dienkripsi seugolom jih akan hana guna meunyo droeneuh ka mulai neupakek dompet nyang ka dienkripsi baroe.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -216,19 +216,19 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Pengenkripsian dompet gagal karena kesalahan internal. Dompet Anda tidak dienkripsi.</translation>
+        <translation>Enkripsi dompet hana meuhasé kareuna keusalahan dalam. Dompet awak nyan hana dienkripsi.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>Kata sandi yang dimasukkan tidak cocok.</translation>
+        <translation>Kata sandi nyang ka tapeutamong hana cocok.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Membuka dompet gagal</translation>
+        <translation>Peuhah dompet gagal</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Kata sandi yang dimasukkan untuk dekripsi dompet salah.</translation>
+        <translation>Kata sandi nyang ka geutamong keu dekripsi dompet hana beutoi.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -236,27 +236,27 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Kata sandi berhasil diganti.</translation>
+        <translation>Kata sandi berhasil geu ubah.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Peringatan: Tombol Caps Lock aktif!</translation>
+        <translation>Peringatan: Kunci Caps Lock ka aktif!</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
-        <translation>Dompet akan dienkripsi</translation>
+        <translation>Dompet nyan akan di enkripsi</translation>
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
-        <translation>Dompet Anda akan dienkripsi</translation>
+        <translation>Dompet droeneuh akan di enkripsi.</translation>
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
-        <translation>Dompet Anda sudah dienkripsi. </translation>
+        <translation>Dompet droeneuh ka ji enkripsi. </translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your nusacoins from being stolen by malware infecting your computer.</source>
-        <translation>Ingatlah bahwa mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi nusacoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
+        <translation>Neu ingat bahwa enkripsi dompet droe hana jeut sepenuh jih melindungi nusacoin droe dari dicue le malware yang menginfeksi komputer droe.</translation>
     </message>
 </context>
 <context>
@@ -282,7 +282,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Copy to Clipboard</source>
-        <translation>Salin ke Papanklip</translation>
+        <translation>Salen ke Papeunklip</translation>
     </message>
     <message>
         <source>Save...</source>
@@ -290,31 +290,31 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation>Tutop</translation>
     </message>
     <message>
         <source>Transaction still needs signature(s).</source>
-        <translation>Transaksi membutuhkan tandatangan digital</translation>
+        <translation>Transaksi peureulee tandatangan digital</translation>
     </message>
     <message>
         <source>Transaction is fully signed and ready for broadcast.</source>
-        <translation>Transaksi tertandatangani dan siap disiarkan</translation>
+        <translation>Transaksi ka geutandatangani dan ka siap disiarkan</translation>
     </message>
     <message>
         <source>Transaction status is unknown.</source>
-        <translation>Status transaksi tidak diketahui</translation>
+        <translation>Status transaksi hana teupeu</translation>
     </message>
     <message>
         <source>(But this wallet cannot sign transactions.)</source>
-        <translation>(Dompet ini tak dapat menandatangani.)</translation>
+        <translation>(Dompet nyoe hanjeut tandatangan.)</translation>
     </message>
     <message>
         <source>(But this wallet does not have the right keys.)</source>
-        <translation>(Dompet ini tidak memuat kunci pribadi yang dibutuhkan)</translation>
+        <translation>(Dompet nyoe hana kunci pribadi nyang dipeureulee)</translation>
     </message>
     <message>
         <source>Transaction is missing some information about inputs.</source>
-        <translation>Transaksi tidak menyediakan cukup informasi tentang masukkan</translation>
+        <translation>Transaksi nyan hana geubri informasi nyang cukop teuntang input.</translation>
     </message>
     <message>
         <source>PSBT Operations</source>
@@ -322,31 +322,31 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Transaction broadcast failed: %1</source>
-        <translation>Penyiaran Transaksi gagal: %1</translation>
+        <translation>Siaran Transaksi hana meuhasé: %1</translation>
     </message>
     <message>
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>Penyiaran Transaksi berhasil! ID Transaksi: %1</translation>
+        <translation>Transaksi Siaran sukses! ID transaksi: %1</translation>
     </message>
     <message>
         <source>Unknown error processing transaction.</source>
-        <translation>Kesalahan tidak diketahui dalam memproses transaksi</translation>
+        <translation>Kesalahan hana diteupeu lam peugot transaksi</translation>
     </message>
     <message>
         <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
-        <translation>Penandatanganan transaksi berhasil. Transaksi siap disiarkan</translation>
+        <translation>Penandatanganan transaksi berhasil. Transaksi ka siap keu siaran.</translation>
     </message>
     <message>
         <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>Menandatangani %1 masukkan, masih membutuhkan tandatangan lainnya.</translation>
+        <translation>Tandatangan %1 enter, mantong peureulee tandatangan laen.</translation>
     </message>
     <message>
         <source>Failed to sign transaction: %1</source>
-        <translation>Gagal menandatangani transaksi: %1</translation>
+        <translation>Gagal tandatangani transaksi: %1</translation>
     </message>
     <message>
         <source>Could not sign any more inputs.</source>
-        <translation>Tidak dapat menandatangani masukkan lebih lanjut.</translation>
+        <translation>Hana jeuet ta tandatangani input leubeh lanjot.</translation>
     </message>
     <message>
         <source>Save Transaction Data</source>
@@ -358,11 +358,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source> * Sends %1 to %2</source>
-        <translation> * Kirim %1 ke %2</translation>
+        <translation> * Kirem %1 ke %2</translation>
     </message>
     <message>
         <source>Unable to calculate transaction fee or total transaction amount.</source>
-        <translation>Gagal menghitung biaya dan jumlah transaksi</translation>
+        <translation>Gagal meuhitong biaya ngon jumlah transaksi</translation>
     </message>
     <message>
         <source>Pays transaction fee: </source>
@@ -374,11 +374,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Transaction has %1 unsigned inputs.</source>
-        <translation>Transaksi memuat %1 masukkan belum tertandatangani</translation>
+        <translation>Transaksi meuasoe %1 entri nyang hana tandatangan</translation>
     </message>
     <message>
         <source>or</source>
-        <translation>atau</translation>
+        <translation>atawa</translation>
     </message>
 </context>
 <context>
@@ -397,7 +397,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Tampilkan gambaran umum dompet Anda</translation>
+        <translation>Peuleumah gambaran dompet droeneuh</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -405,7 +405,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Lihat riwayat transaksi</translation>
+        <translation>Neukalön riwayat transaksi</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -413,7 +413,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Keluar dari aplikasi</translation>
+        <translation>Teubiet dari aplikasi</translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -421,7 +421,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Show information about %1</source>
-        <translation>Tampilkan informasi perihal %1</translation>
+        <translation>Peuleumah informasi teuntang %1.</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -429,7 +429,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Tampilkan informasi mengenai Qt</translation>
+        <translation>Peuleumah informasi teuntang Qt .</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
@@ -437,7 +437,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
-        <translation>Pengubahan opsi konfigurasi untuk %1</translation>
+        <translation>Meuubah opsi konfigurasi keu %1.</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
@@ -461,15 +461,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Klik untuk menonaktifkan aktivitas jaringan.</translation>
+        <translation>Klik keu neupeu-aktif kegiatan jaringan.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation>Aktivitas jaringan dinonaktifkan.</translation>
+        <translation>Kegiatan jaringan ka hana meuguna.</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-        <translation>Klik untuk mengaktifkan aktivitas jaringan lagi.</translation>
+        <translation>Klik keu neu aktifkan lom kegiatan jaringan.</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
@@ -485,15 +485,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Send coins to a Nusacoin address</source>
-        <translation>Kirim koin ke alamat Nusacoin</translation>
+        <translation>Kirem koin ke alamat Nusacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>Cadangkan dompet ke lokasi lain</translation>
+        <translation>Cadangkan dompet ke lokasi laen</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Ubah kata kunci yang digunakan untuk enkripsi dompet</translation>
+        <translation>Gantoe kata sandi nyang geungui keu enkripsi dompet</translation>
     </message>
     <message>
         <source>&amp;Node window</source>
