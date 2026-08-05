@@ -1003,11 +1003,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Make Blank Wallet</source>
-        <translation>Buat Dompet Kosong</translation>
+        <translation>Peugeut Dompet Kosong</translation>
     </message>
     <message>
         <source>Create</source>
-        <translation>Membuat</translation>
+        <translation>Peugeut</translation>
     </message>
     <message>
         <source>Descriptor Wallet</source>
@@ -1015,7 +1015,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Use descriptors for scriptPubKey management</source>
-        <translation>Gunakan deskriptor untuk manajemen scriptPubKey.</translation>
+        <translation>Pakèk deskriptor keu peumeurèntah scriptPubKey.</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1034,11 +1034,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Label yang terkait dengan daftar alamat</translation>
+        <translation>Label nyang meuhubông ngon daftar alamat</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Alamat yang terkait dengan daftar alamat. Hanya dapat diubah untuk alamat pengirim.</translation>
+        <translation>Alamat nyang meuhubông ngon daftar alamat. Jeut geu ubah keu alamat pengirim mantong.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -1046,35 +1046,35 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>New sending address</source>
-        <translation>Alamat pengirim baru</translation>
+        <translation>Alamat pengirem baro</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Ubah alamat penerima</translation>
+        <translation>Ubah alamat nyang teurimong</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Ubah alamat pengirim</translation>
+        <translation>Ubah alamat ureueng nyang kirem</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is not a valid Nusacoin address.</source>
-        <translation>Alamat yang dimasukkan &quot;%1&quot; bukanlah alamat Nusacoin yang valid.</translation>
+        <translation>Alamat nyang ka geupeutamong &quot;%1&quot; kon alamat Nusacoin nyang sah.</translation>
     </message>
     <message>
         <source>Address &quot;%1&quot; already exists as a receiving address with label &quot;%2&quot; and so cannot be added as a sending address.</source>
-        <translation>Alamat &quot;%1&quot; sudah ada sebagai alamat penerimaan dengan label &quot;%2&quot; sehingga tidak bisa ditambah sebagai alamat pengiriman.</translation>
+        <translation>Alamat &quot;%1&quot; ka na seubagoe alamat teurimong ngon label &quot;%2&quot; jadi hana jeut ta tamah seubagoe alamat pengiriman.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book with label &quot;%2&quot;.</source>
-        <translation>Alamat &quot;%1&quot; yang dimasukkan sudah ada di dalam buku alamat dengan label &quot;%2&quot;.</translation>
+        <translation>Alamat &quot;%1&quot; nyang ka geupeutamong ka na lam buku alamat ngon label &quot;%2&quot;.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>Tidak dapat membuka dompet.</translation>
+        <translation>Hana jeut buka dompet.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>Pembuatan kunci baru gagal.</translation>
+        <translation>Peugot kunci baroe hana meuhase.</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1089,23 +1089,23 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Sebuah data direktori baru telah dibuat.</translation>
+        <translation>Data direktori baro ka geupeugot.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>nama</translation>
+        <translation>nan</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Direktori masih ada. Tambahlah %1 apabila Anda ingin membuat direktori baru disini.</translation>
+        <translation>Direktori nyan mantong na. Tambah %1 meunyo neukeuneuk peugot direktori baroe di sinoe.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Sudah ada path, dan itu bukan direktori.</translation>
+        <translation>Kana path, dan nyan kon direktori.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>Tidak bisa membuat direktori data disini.</translation>
+        <translation>Hana jeuet tapeugot direktori data disinoë.</translation>
     </message>
 </context>
 <context>
