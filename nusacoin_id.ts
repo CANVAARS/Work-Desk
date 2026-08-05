@@ -5,39 +5,39 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Klik-kanan untuk mengubah alamat atau label</translation>
+        <translation>Klik-uneun keu neu ubah alamat atawa label</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Buat alamat baru</translation>
+        <translation>Peugot alamat baro</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Baru</translation>
+        <translation>&amp;Baro</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Salin alamat yang dipilih ke clipboard</translation>
+        <translation>Salen alamat nyang ka neupiléh u papeun klip</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Salin</translation>
+        <translation>&amp;Salen</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>T&amp;utup</translation>
+        <translation>T&amp;utop</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Hapus alamat yang sementara dipilih dari daftar</translation>
+        <translation>Peuhah alamat nyang ka neupiléh keu siat nibak daftar</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
-        <translation>Masukkan alamat atau label untuk mencari</translation>
+        <translation>Tapeutamong alamat atawa label keu tamita</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Ekspor data dalam tab sekarang ke sebuah berkas</translation>
+        <translation>Ekspor data lam tab jinoe keu saboh file</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -45,23 +45,23 @@
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Hapus</translation>
+        <translation>&amp;Sampoh</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Pilih alamat untuk mengirim koin</translation>
+        <translation>Pileh alamat keu neukirém koin</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Piih alamat untuk menerima koin</translation>
+        <translation>Pileh saboh alamat keu neuteurimong koin</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>&amp;Pilih</translation>
+        <translation>&amp;Pileh</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Alamat-alamat pengirim</translation>
+        <translation>Alamat-alamat pengirem</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
@@ -69,16 +69,16 @@
     </message>
     <message>
         <source>These are your Nusacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Berikut ialah alamat-alamat Nusacoin Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+        <translation>Nyoe keuh alamat Nusacoin droeneuh nyang dipakek untuk neukirém peng. Sabe-sabe neuverifikasi jumlah dan alamat penerima sigohlom neukirém koin.</translation>
     </message>
     <message>
         <source>These are your Nusacoin addresses for receiving payments. Use the &apos;Create new receiving address&apos; button in the receive tab to create new addresses.</source>
-        <translation>Berikut adalah alamat Nusacoin Anda untuk menerima pembayaran. Tekan tombol &apos;buat alamat terima baru&apos; di menu &apos;Menerima&apos; untuk membuat alamat baru.</translation>
+        <translation>Nyoe keuh alamat Nusacoin droeneuh untuk neuteurimong pembayaran. Teukan tombol nyan &apos;peugot alamat teurimong baro&apos; di menu &apos;Trimong&apos; keu peugot alamat baro.</translation>
     </message>
     <message>
         <source>These are your Nusacoin addresses for receiving payments. Use the &apos;Create new receiving address&apos; button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
-        <translation>Berikut adalah alamat Nusacoin Anda untuk menerima pembayaran. Tekan tombol &apos;buat alamat terima baru&apos; di menu &apos;Menerima&apos; untuk membuat alamat baru. Penandatanganan hanya dimungkinkan dengan alamat jenis &apos;legacy&apos; (Awalan N)</translation>
+        <translation>Nyoe keuh alamat Nusacoin droeneuh untuk neuteurimong pembayaran. Teukan tombol nyan &apos;peugot alamat teurimong baro&apos; di menu &apos;Trimong&apos; keu peugot alamat baro. Peutandatangan hanya mungken deungon alamat jenis nyoe &apos;legacy&apos; (Awalan N)</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
