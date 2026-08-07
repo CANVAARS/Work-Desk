@@ -1131,39 +1131,39 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-        <translation>Selamat Datang</translation>
+        <translation>Saleum Teuka</translation>
     </message>
     <message>
         <source>Welcome to %1.</source>
-        <translation>Selamat Datang di %1.</translation>
+        <translation>Saleum Teuka di %1.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation>Karena ini adalah pertama kalinya program dijalankan, Anda dapat memilih lokasi dimana %1 akan menyimpan data.</translation>
+        <translation>Kareuna nyoe keuh phon that program nyoe ji jalankan, droeneuh jeut neu pileh teumpat %1 akan neu simpan data.</translation>
     </message>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Ketika Anda klik OK, %1 akan mulai mengunduh dan memproses %4 block chain (%2GB), mulai dari transaksi-transaksi awal di %3 saat %4 diluncurkan pertama kali.</translation>
+        <translation>Meunyo neukliek OK, %1 akan mulai neu-download ngon neuproses rantai blok %4 (%2GB), mulai dari transaksi awai bak %3 watee %4 phon that neupeuhah.</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
-        <translation>Mengubah kembali pengaturan ini memerlukan pengunduhan ulang seluruh blockchain dari awal. Lebih cepat mengunduh rantai lengkap terlebih dahulu dan memangkasnya nanti. Ini juga akan menonaktifkan beberapa fitur lanjutan.</translation>
+        <translation>Meu ubah setting nyoe kembali perle neu download ulang mandum blockchain dari nol. Leubeh bagah neu download rante lengkap dilee dan neu prune eunteuk. Nyoe pih akan geupeugadoh padum-padum boh fitur canggih.</translation>
     </message>
     <message>
         <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Sinkronisasi awal mungkin membutuhkan waktu yang lama dan mungkin komputer Anda mempunyai masalah yang sebelumnya tidak Anda ketahui. Setiap kali Anda menjalankan %1, aplikasi ini akan melanjutkan pengunduhan block chain dari posisi terakhir Anda menutupnya.</translation>
+        <translation>Sinkronisasi awai mungkén payah watèë nyang treb, ngon komputer droëneuh mungkén na masalah nyang hana neuteupeuë. Tiëp-tiëp watèë droëneuh neujak %1, aplikasi nyan akan neulanjutkan lom neu-download blockchain dari teumpat droëneuh neupeutheun.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Apabila Anda memilih untuk membatasi penyimpanan block chain (pruning), data historis tetap akan diunduh dan diproses. Namun, data akan dihapus setelahnya untuk menjaga pemakaian disk agar tetap sedikit.</translation>
+        <translation>Meunyo droeneuh neupileh untuk neubatasi teumpat simpan blockchain (pruning), data seujarah mantong akan neu-download dan neuproses. Teuma, data nyan akan geusampôh lheuëh nyan keu geupeukureuëng penggunaan disk.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>Gunakan direktori data default.</translation>
+        <translation>Pakèk direktori data nyang ka geungui.</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>Gunakan direktori pilihan Anda:</translation>
+        <translation>Pakèk direktori nyang neupiléh:</translation>
     </message>
     <message>
         <source>Nusacoin</source>
@@ -1171,27 +1171,27 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Discard blocks after verification, except most recent %1 GB (prune)</source>
-        <translation>Abaikan blok yang telah diverifikasi, kecuali %1 GB terbaru (pangkas)</translation>
+        <translation>Peu abai blok nyang ka geuverifikasi, keucuali %1 GB nyang paleng barô (peukoh)</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>Setidaknya %1 GB data akan disimpan di direktori ini dan ukuran block chain akan bertambah seiring berjalannya waktu.</translation>
+        <translation>Seutidak jih %1 GB data akan disimpan lam direktori nyoe dan ukuran rante blok akan meutamah dari watee u watee.</translation>
     </message>
     <message>
         <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>%1 GB data akan disimpan di direktori ini.</translation>
+        <translation>%1 GB data akan disimpan lam direktori nyoe.</translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Nusacoin block chain.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan Nusacoin block chain.</translation>
+        <translation>%1 akan geu-download dan geusimpan saboh salinan rante blok Nusacoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
-        <translation>File Dompet (dat) juga akan disimpan di direktori ini.</translation>
+        <translation>File dompet (dat) pih akan disimpan lam direktori nyoe.</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
-        <translation>Kesalahan: Direktori data &quot;%1&quot; tidak dapat dibuat.</translation>
+        <translation>Kesalahan: Direktori data &quot;%1&quot; hana jeuet tapeujeuet.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1200,13 +1200,13 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <message numerus="yes">
         <source>%n GB of free space available</source>
         <translation>
-            <numerusform>%n GB ruang kosong tersedia.</numerusform>
+            <numerusform>%n GB teumpat bebas nyang na.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>(of %n GB needed)</source>
         <translation>
-            <numerusform>(dari %n GB yang dibutuhkan)</numerusform>
+            <numerusform>(dari %n GB nyang dipeureulee)</numerusform>
         </translation>
     </message>
     <message>
@@ -1222,48 +1222,48 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the nusacoin network, as detailed below.</source>
-        <translation>Transaksi-transaksi terbaru mungkin belum tampil pada dompet Anda dan oleh karenanya, saldo dompet Anda mungkin tidak akurat.
-        Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Nusacoin, seperti rincian berikut.</translation>
+        <translation>Transaksi baroe mungken gohlom deuh lam dompet droeneuh dan kareuna nyan, saldo dompet droeneuh mungken hana akurat.
+        Informasi nyoe akan akurat watee dompet droeneuh ka sinkron ngon jaringan Nusacoin, lagee detail di miyup nyoe.</translation>
     </message>
     <message>
         <source>Attempting to spend nusacoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Mencoba untuk menggunakan Nusacoin pada transaksi yang belum tampil tidak akan diterima oleh jaringan.</translation>
+        <translation>Meunyo neu usaha pakek Nusacoin bak transaksi nyang gohlom deuh hana akan ji teurimong le jaringan.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
-        <translation>Jumlah blok tersisa</translation>
+        <translation>Jumlah blok nyang mantong na.</translation>
     </message>
     <message>
         <source>Unknown...</source>
-        <translation>Tidak diketahui...</translation>
+        <translation>Hana meutupu...</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Waktu blok terakhir</translation>
+        <translation>Masa blok terakhir</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation>Perkembangan</translation>
+        <translation>Peurkembangan</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
-        <translation>Peningkatan perkembangan per jam</translation>
+        <translation>Peuningkatan kemajuan jeum</translation>
     </message>
     <message>
         <source>calculating...</source>
-        <translation>menghitung...</translation>
+        <translation>itong...</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
-        <translation>Estimasi waktu tersisa sampai tersinkronisasi</translation>
+        <translation>Perkiraan watee nyang mantong na sampoe sinkronisasi .</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation>Sembunyikan</translation>
+        <translation>Peusom</translation>
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
-        <translation>Tidak diketahui. Sinkronisasi Header (%1, %2%)...</translation>
+        <translation>Hana meutupu. Sinkronisasi Header (%1, %2%)...</translation>
     </message>
 </context>
 <context>
@@ -1278,7 +1278,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Buka permintaan pembayaran dari URI atau data</translation>
+        <translation>Buka permintaan pembayaran dari URI atawa data</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1286,15 +1286,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation>Pilih data permintaan pembayaran</translation>
+        <translation>Pileh data permintaan pembayaran</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation>Pilih data permintaan pembayaran yang akan dibuka</translation>
+        <translation>Pileh data permintaan pembayaran nyang keuneuk buka</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Tempel alamat dari klipboard</translation>
+        <translation>Neupasoe alamat nibak papan klip</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
@@ -1309,22 +1309,22 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation>Membuka Dompet &lt;b&gt;%1&lt;/b&gt;...</translation>
+        <translation>Peuhah Dompet &lt;b&gt;%1&lt;/b&gt;...</translation>
     </message>
     <message>
         <source>Open wallet failed</source>
-        <translation>Gagal membuka dompet</translation>
+        <translation>Gagal buka dompet</translation>
     </message>
     <message>
         <source>Open wallet warning</source>
-        <translation>Peringatan membuka dompet</translation>
+        <translation>Peringatan buka dompet</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Pilihan</translation>
+        <translation>Pilehan</translation>
     </message>
     <message>
         <source>&amp;Main</source>
@@ -1332,11 +1332,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
-        <translation>Mulai %1 secara otomatis setelah masuk ke dalam sistem.</translation>
+        <translation>Mulai %1 otomatis lheuh neutamong lam sistem.</translation>
     </message>
     <message>
         <source>&amp;Start %1 on system login</source>
-        <translation>Mulai %1 ketika masuk ke &amp;sistem</translation>
+        <translation>Mulai %1 watee tapeutamong nibak &amp;sistem</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1352,55 +1352,55 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Perlihatkan apabila proxy SOCKS5 default digunakan untuk berhungan dengan orang lain lewat tipe jaringan ini.</translation>
+        <translation>Meutunyok meunyo proxy SOCKS5 default geungui keu geuhubong ngon gob lewat tipe jaringan nyoe.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Menggunakan proxy SOCKS5 tersendiri untuk berhubungan dengan orang lain melalui layanan Tor:</translation>
+        <translation>Meungui proxy SOCKS5 khusus keu meuhubông ngon ureuëng la'én rot layanan Tor:</translation>
     </message>
     <message>
         <source>Show the icon in the system tray.</source>
-        <translation>Tampilkan ikon dari system tray.</translation>
+        <translation>Peuleumah ikon dari baki sistem.</translation>
     </message>
     <message>
         <source>&amp;Show tray icon</source>
-        <translation>&amp;Tampilkan ikon tray</translation>
+        <translation>&amp;Peuleumah ikon baki</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
-        <translation>Minimalisasi aplikasi ketika jendela ditutup. Ketika pilihan ini dipilih, aplikasi akan menutup seluruhnya jika anda memilih Keluar di menu yang tersedia.</translation>
+        <translation>Minimalkan aplikasi watee jendela ka teutop. Meunyo opsi nyoe ka neupileh, aplikasi akan ditutop sepenuh jih meunyo neupileh Exit dari menu nyang na.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL pihak ketika (misalnya sebuah block explorer) yang muncul dalam tab transaksi sebagai konteks menu. %s dalam URL diganti dengan kode transaksi. URL dipisahkan dengan tanda vertikal |.</translation>
+        <translation>URL pihak keu lhee (misaljih, penjelajah blok) nyang deuh bak tab transaksi seubagoe menu konteks. %s lam URL nyan geugantoe ngon kode transaksi. URL nyan geupisah ngon tanda garis vertikal |.</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
-        <translation>Buka file konfigurasi %1 dari direktori kerja.</translation>
+        <translation>Buka file konfigurasi %1 dari direktori buet.</translation>
     </message>
     <message>
         <source>Open Configuration File</source>
-        <translation>Buka Berkas Konfigurasi</translation>
+        <translation>Buka File Konfigurasi</translation>
     </message>
     <message>
         <source>Monospaced font in the Overview tab:</source>
-        <translation>Font monospaced pada Kilasan</translation>
+        <translation>Font saboh jarak bak Flash</translation>
     </message>
     <message>
         <source>embedded &quot;%1&quot;</source>
-        <translation>font tertanam &quot;%1&quot;</translation>
+        <translation>font nyang teuseubot &quot;%1&quot;</translation>
     </message>
     <message>
         <source>closest matching &quot;%1&quot;</source>
-        <translation>font terdekat &quot;%1&quot;</translation>
+        <translation>font nyang paleng toe &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Kembalikan semua pengaturan ke awal.</translation>
+        <translation>Neupeugisa mandum setting bak awai.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Reset Pilihan</translation>
+        <translation>&amp;Reset Pilehan</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1408,11 +1408,11 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Menonaktifkan beberapa fitur canggih akan tetapi semua block akan tetap divalidasi seutuhnya. Mengembalikan pengaturan ini memerlukan untuk mengunduh seluruh blockchain. Penggunaan disk mungkin akan lebih tinggi.</translation>
+        <translation>Meunyo neupeu-aktif padum-padum boh fitur canggih mantong jeuet keu mandum blok jeuet neuvalidasi seucara mandum. Meunyo tapeugisa setting nyoe peureulee ta download mandum blockchain. Peuguna disk mungken leubeh manyang.</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
-        <translation>Prune &amp;ruang penyimpan block ke</translation>
+        <translation>Prune &amp;blok teumpat simpan keu</translation>
     </message>
     <message>
         <source>GB</source>
@@ -1420,7 +1420,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain.</source>
-        <translation>Mengembalikan pengaturan ini membutuhkan pengunduhan seluruh blockchain lagi. </translation>
+        <translation>Keu peugot lom pengaturan nyoe peureulee ta download mandum blockchain lom. </translation>
     </message>
     <message>
         <source>MiB</source>
@@ -1440,15 +1440,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Perbolehkan fitur &amp;pengaturan koin</translation>
+        <translation>Izin fitur &amp;pengaturan koin</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation>Jika Anda menonaktifkan pengaturan ini, uang kembalian tidak dapat dibelanjakan sampai transaksinya memiliki setidaknya satu konfirmasi. Hal ini juga mempengaruhi bagaimana saldo keseluruhan dompet Anda dihitung.</translation>
+        <translation>Meunyo droeneuh neupeu-aktif setting nyoe, perubahan droeneuh hana jeuet neu-abeh sampoe transaksi nyan na seutidak jih saboh konfirmasi. Nyoe pih na pengaroh bak cara saldo dompet droe secara keseluruhan dihitong.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Belanjakan kembalian yang belum terkonfirmasi</translation>
+        <translation>&amp;Peuguna kembali nyang hana dikonfirmasi</translation>
     </message>
     <message>
         <source>Enable &amp;PSBT controls</source>
@@ -1456,31 +1456,31 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Whether to show PSBT controls.</source>
-        <translation>Tampilkan kontrol PSBT atau tidak</translation>
+        <translation>Peuleumah kontrol PSBT atawa hana</translation>
     </message>
     <message>
         <source>Automatically open the Nusacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client Nusacoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <translation>Otomatis buka port klien Nusacoin bak router. Hanya berjalan meunyo router droeneuh mendukung UPnP dan ka aktif.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Petakan port dengan &amp;UPnP</translation>
+        <translation>Petakan port deungon &amp;UPnP</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
-        <translation>Terima koneksi-koneksi dari luar.</translation>
+        <translation>Teurimong sambungan dari luwa.</translation>
     </message>
     <message>
         <source>Allow incomin&amp;g connections</source>
-        <translation>Terima koneksi-koneksi masuk</translation>
+        <translation>Teurimong koneksi nyang tamong</translation>
     </message>
     <message>
         <source>Connect to the Nusacoin network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan Nusacoin melalui SOCKS5 proxy.</translation>
+        <translation>Neuhubong ngon jaringan Nusacoin lewat proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Hubungkan melalui proxy SOCKS5 (proxy default):</translation>
+        <translation>&amp;Meuhubong rot proxy SOCKS5 (proxy default):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1496,7 +1496,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
-        <translation>Digunakan untuk berhubungan dengan peers melalui:</translation>
+        <translation>Dipakek untuk meuhubungan ngon rakan-rakan melalui:</translation>
     </message>
     <message>
         <source>IPv4</source>
@@ -1512,7 +1512,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Connect to the Nusacoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Koneksi ke jaringan nusacoin melalui proxy SOCKS5 yang berbeda untuk layanan Tor tersembunyi.</translation>
+        <translation>Koneksi keu jaringan nusacoin melalui proxy SOCKS5 nyang beda keu layanan Tor nyang teusöm.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1520,15 +1520,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Hanya tampilkan ikon tray setelah minimalisasi jendela</translation>
+        <translation>Hanya peuleumah ikon baki lheuh minimalisasi jendela</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimalisasi ke tray daripada taskbar</translation>
+        <translation>&amp;Minimalisir keu baki nibak taskbar</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimalisasi saat tutup</translation>
+        <translation>M&amp;eminimalkan watee meutop</translation>
     </message>
     <message>
         <source>&amp;Display</source>
@@ -1540,15 +1540,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
-        <translation>Bahasa tampilan dapat diatur di sini. Pengaturan ini akan berpengaruh setelah aplikasi %1 ditutup dan buka kembali.</translation>
+        <translation>Bahasa tampilan jeut neu atur di sinoe. Peuatoan nyoe akan mulai berlaku lheuh aplikasi %1 ditop dan dibuka lom.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unit untuk menunjukkan nilai:</translation>
+        <translation>&amp;Satuan keu peutunyok nilai:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Pilih standar unit yang ingin ditampilkan pada layar aplikasi dan saat mengirim koin.</translation>
+        <translation>Pileh standar satuan nyang keuneuk tapeuleumah bak layar app dan watee neukirém koin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
