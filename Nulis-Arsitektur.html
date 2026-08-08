@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHEET // Bot Inspirasi Arsitektur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blueprint-navy:#0e1c38;
+    --blueprint-mid:#152a52;
+    --blueprint-deep:#0a1428;
+    --line-blue:#7fa8d9;
+    --line-blue-dim:rgba(127,168,217,0.18);
+    --paper:#ede7d8;
+    --paper-dim:#e2dcc9;
+    --graphite:#23262b;
+    --graphite-soft:#5b5f66;
+    --redline:#e8542a;
+    --redline-dim:rgba(232,84,42,0.15);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:
+      linear-gradient(var(--line-blue-dim) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--line-blue-dim) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at top, var(--blueprint-mid), var(--blueprint-deep) 75%);
+    min-height:100vh;
+    font-family:'IBM Plex Sans', sans-serif;
+    color:var(--paper);
+    padding:32px 20px 60px;
+  }
+  .wrap{max-width:820px; margin:0 auto;}
+
+  /* Header */
+  header{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:1.5px solid var(--line-blue);
+    padding-bottom:18px; margin-bottom:8px; flex-wrap:wrap; gap:14px;
+  }
+  .brand-eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.14em;
+    color:var(--line-blue); text-transform:uppercase; margin-bottom:6px;
+  }
+  h1{
+    font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:clamp(26px,4vw,36px);
+    line-height:1.1; color:var(--paper);
+  }
+  h1 span{color:var(--redline);}
+  .header-meta{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--line-blue);
+    text-align:right; line-height:1.7; letter-spacing:.03em;
+  }
+  .sub{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--line-blue);
+    margin:14px 0 28px; letter-spacing:.02em;
+  }
+
+  /* Controls */
+  .controls{
+    display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:30px;
+  }
+  select, button.gen{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:.03em;
+    padding:12px 16px; border-radius:2px; border:1.5px solid var(--line-blue);
+    background:transparent; color:var(--paper); cursor:pointer;
+  }
+  select{ appearance:none; background:var(--blueprint-navy) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%237fa8d9'/></svg>") no-repeat right 14px center; padding-right:34px; min-width:220px;}
+  button.gen{
+    background:var(--redline); border-color:var(--redline); color:var(--blueprint-deep);
+    font-weight:600; text-transform:uppercase; letter-spacing:.08em;
+    display:flex; align-items:center; gap:10px; transition:transform .15s ease, box-shadow .15s ease;
+  }
+  button.gen:hover{ box-shadow:0 0 0 3px var(--redline-dim); }
+  button.gen:active{ transform:translateY(1px); }
+  button.gen:disabled{ opacity:.55; cursor:progress; }
+  .spinner{
+    width:13px; height:13px; border-radius:50%;
+    border:2px solid var(--blueprint-deep); border-top-color:transparent;
+    animation:spin .7s linear infinite; display:none;
+  }
+  button.gen.loading .spinner{ display:inline-block; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  /* Status / error */
+  .status{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--redline);
+    margin-bottom:18px; display:none; border-left:3px solid var(--redline); padding-left:10px;
+  }
+  .status.show{ display:block; }
+
+  /* Sheet card (the drafting sheet) */
+  #results{ display:flex; flex-direction:column; gap:26px; }
+  .sheet{
+    background:var(--paper);
+    color:var(--graphite);
+    border-radius:2px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
+    overflow:hidden;
+    animation:rise .5s ease both;
+  }
+  @keyframes rise{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
+
+  .sheet-top{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    padding:22px 26px 14px; border-bottom:1px solid rgba(35,38,43,0.15);
+  }
+  .sheet-num{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.1em;
+    color:var(--redline); font-weight:600;
+  }
+  .sheet-cat{
+    font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.08em;
+    color:var(--graphite-soft); text-transform:uppercase; margin-top:4px;
+  }
+  .sheet-title{
+    font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:21px;
+    line-height:1.25; margin-top:2px; max-width:70%;
+  }
+  .sheet-loc{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--graphite-soft);
+    text-align:right; line-height:1.6;
+  }
+
+  .thread{ padding:20px 26px 8px; }
+  .tpost{
+    display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed rgba(35,38,43,0.18);
+  }
+  .tpost:last-child{ border-bottom:none; }
+  .tpost-idx{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--redline);
+    font-weight:600; min-width:24px; padding-top:2px;
+  }
+  .tpost-text{ font-size:14.5px; line-height:1.6; }
+  .tpost-text.hook{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:16.5px; }
+
+  .hashtags{
+    padding:14px 26px 0; font-family:'IBM Plex Mono', monospace; font-size:12px;
+    color:var(--redline); letter-spacing:.02em;
+  }
+
+  .titleblock{
+    display:grid; grid-template-columns:repeat(4,1fr);
+    border-top:1.5px solid var(--graphite); margin-top:20px;
+  }
+  .tb-cell{
+    padding:10px 14px; border-right:1px solid rgba(35,38,43,0.2);
+    font-family:'IBM Plex Mono', monospace;
+  }
+  .tb-cell:last-child{ border-right:none; }
+  .tb-label{ font-size:9px; letter-spacing:.1em; color:var(--graphite-soft); text-transform:uppercase; margin-bottom:3px; }
+  .tb-value{ font-size:11.5px; color:var(--graphite); word-break:break-word; }
+  .tb-value a{ color:var(--redline); text-decoration:none; }
+  .tb-value a:hover{ text-decoration:underline; }
+
+  .sheet-actions{
+    display:flex; justify-content:flex-end; gap:10px; padding:12px 26px 18px;
+  }
+  .copy-btn{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.06em;
+    background:transparent; border:1px solid var(--graphite); color:var(--graphite);
+    padding:8px 14px; border-radius:2px; cursor:pointer; text-transform:uppercase;
+  }
+  .copy-btn:hover{ background:var(--graphite); color:var(--paper); }
+
+  .empty-state{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--line-blue);
+    border:1px dashed var(--line-blue); padding:26px; text-align:center; border-radius:2px;
+  }
+
+  footer{
+    margin-top:50px; padding-top:16px; border-top:1px solid var(--line-blue-dim);
+    font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--graphite-soft);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  @media(max-width:560px){
+    .sheet-top{ flex-direction:column; gap:10px; }
+    .sheet-loc{ text-align:left; }
+    .sheet-title{ max-width:100%; }
+    .titleblock{ grid-template-columns:repeat(2,1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <div class="brand-eyebrow">Studio Referensi — Praktik Arsitektur</div>
+      <h1>SHEET<span>//</span>ARCHDAILY</h1>
+    </div>
+    <div class="header-meta">
+      SUMBER: ArchDaily & referensi lain<br>
+      FORMAT: Thread (X / Instagram)<br>
+      GAYA: Santai, Gen Z
+    </div>
+  </header>
+
+  <p class="sub">// Bot kurasi inspirasi desain — tiap klik ngasih proyek beda, dirangkum jadi draf thread yang gampang di-scroll. Cek ulang link sumbernya sebelum posting ya.</p>
+
+  <div class="controls">
+    <select id="categorySelect">
+      <option value="random">Kategori — Acak (disarankan)</option>
+      <option value="residential">Arsitektur Residensial</option>
+      <option value="sustainable">Arsitektur Berkelanjutan / Hijau</option>
+      <option value="adaptive-reuse">Adaptive Reuse & Renovasi</option>
+      <option value="cultural">Bangunan Budaya & Publik</option>
+      <option value="urban">Desain Urban & Lansekap</option>
+      <option value="material">Inovasi Material & Struktur</option>
+      <option value="interior">Desain Interior</option>
+      <option value="small-scale">Skala Kecil / Rumah Mungil</option>
+    </select>
+    <button class="gen" id="genBtn">
+      <span class="spinner"></span>
+      <span id="genLabel">Generate Ide Thread Baru</span>
+    </button>
+  </div>
+
+  <div class="status" id="statusBox"></div>
+
+  <div id="results">
+    <div class="empty-state">Belum ada sheet yang dibuat. Klik "Generate Ide Thread Baru" untuk menarik proyek dari ArchDaily.</div>
+  </div>
+
+  <footer>
+    <span>SHEET GENERATOR v1.0</span>
+    <span id="sheetCount">TOTAL SHEET: 0</span>
+  </footer>
+
+</div>
+
+<script>
+const categories = {
+  residential: "arsitektur residensial / rumah tinggal",
+  sustainable: "arsitektur berkelanjutan, hemat energi, atau bangunan hijau",
+  "adaptive-reuse": "adaptive reuse, renovasi, atau bangunan bersejarah yang direvitalisasi",
+  cultural: "bangunan budaya, museum, atau ruang publik",
+  urban: "desain urban, lansekap, atau ruang kota",
+  material: "inovasi material konstruksi atau sistem struktur",
+  interior: "desain interior",
+  "small-scale": "rumah mungil atau proyek skala kecil"
+};
+const categoryLabels = {
+  residential: "Residensial", sustainable: "Berkelanjutan", "adaptive-reuse": "Adaptive Reuse",
+  cultural: "Budaya & Publik", urban: "Urban & Lansekap", material: "Material & Struktur",
+  interior: "Interior", "small-scale": "Skala Kecil"
+};
+
+const THREAD_BANK = [
+  {
+    category: "residential",
+    project_name: "Fallingwater",
+    location: "Mill Run, Pennsylvania, AS",
+    architect_firm: "Frank Lloyd Wright",
+    source_url: "https://www.archdaily.com",
+    hook: "Bayangin rumah yang literally dibangun DI ATAS air terjun, bukan cuma di dekatnya. Ini dia bukti kalau rumah bisa jadi bagian dari alam, bukan cuma numpang di atasnya.",
+    points: [
+      "Frank Lloyd Wright bikin rumah ini nempel langsung di atas aliran sungai Bear Run, tahun 1930-an. Konsepnya: rumah dan alam nggak boleh dipisah.",
+      "Struktur kantilevernya nge-gantung ke luar tebing, jadi kesan 'ngambang' di atas air terjun. Berani banget buat era itu.",
+      "Material batu lokal dipakai buat dinding, biar rumahnya kerasa tumbuh dari tanahnya sendiri, bukan ditempel begitu aja.",
+      "Sampai sekarang rumah ini jadi salah satu ikon arsitektur organik paling dikenal sedunia — konsepnya masih relevan buat desain yang 'nyatu' sama lingkungan."
+    ],
+    closing: "Kalau ada yang tanya 'arsitektur bisa se-emosional apa sih', ya tinggal tunjukin Fallingwater aja.",
+    hashtags: ["#arsitektur", "#fallingwater", "#franklloydwright", "#organicarchitecture", "#desainrumah"]
+  },
+  {
+    category: "residential",
+    project_name: "Villa Vals",
+    location: "Vals, Swiss",
+    architect_firm: "SeARCH & CMA",
+    source_url: "https://www.archdaily.com",
+    hook: "Rumah ini KELIHATANNYA nggak ada. Literally 'ngumpet' di dalam bukit, dan itu emang sengaja.",
+    points: [
+      "Dari luar, yang keliatan cuma jendela bundar gede di sisi bukit — sisanya rumah ini terkubur di dalam tanah.",
+      "Alasannya bukan cuma estetik: ada aturan tata kota di area itu yang ngelarang bangunan baru menutupi pemandangan pegunungan, jadi arsiteknya mikir out of the box.",
+      "Di dalam, rumahnya justru terang dan lapang karena jendela bundar itu ngarah ke lembah, jadi privasi tetep dapet, view juga dapet.",
+      "Konsep ini masuk kategori 'earth-sheltered house' — rumah yang pake tanah sebagai insulasi alami, hemat energi juga."
+    ],
+    closing: "Kadang solusi paling kreatif itu justru dari batasan yang paling ketat. Villa Vals bukti nyatanya.",
+    hashtags: ["#arsitektur", "#villavals", "#earthshelteredhouse", "#desainrumah", "#swissarchitecture"]
+  },
+  {
+    category: "sustainable",
+    project_name: "CopenHill (Amager Bakke)",
+    location: "Kopenhagen, Denmark",
+    architect_firm: "BIG (Bjarke Ingels Group)",
+    source_url: "https://www.archdaily.com",
+    hook: "Pabrik pengolahan sampah yang atapnya dijadiin tempat main ski. Literally cuma di Denmark hal seaneh sekaligus se-genius ini kejadian.",
+    points: [
+      "CopenHill itu fasilitas waste-to-energy — sampah kota diolah jadi listrik dan panas buat ribuan rumah di Kopenhagen.",
+      "Bagian atapnya dibikin miring dan dilapisi rumput sintetis, jadi bisa dipakai buat ski, snowboard, sampai hiking sepanjang tahun.",
+      "Ada juga dinding panjat tebing setinggi 85 meter nempel di sisi bangunannya. Fasilitas publik dan infrastruktur jadi satu paket.",
+      "Ini contoh konkret konsep 'hedonistic sustainability' ala BIG — keberlanjutan itu nggak harus ngorbanin kesenangan, malah bisa jadi daya tarik."
+    ],
+    closing: "Bayangin kalau tiap fasilitas 'kotor' di kota kita didesain sekeren ini. Persepsi orang soal infrastruktur bisa berubah total.",
+    hashtags: ["#arsitekturhijau", "#copenhill", "#big", "#sustainabledesign", "#wastetoenergy"]
+  },
+  {
+    category: "sustainable",
+    project_name: "Bosco Verticale",
+    location: "Milan, Italia",
+    architect_firm: "Stefano Boeri Architetti",
+    source_url: "https://www.archdaily.com",
+    hook: "Dua menara apartemen ini punya lebih dari 900 pohon nempel di baloknya. Iya, POHON, bukan tanaman hias doang.",
+    points: [
+      "Tiap unit apartemen punya balkon yang cukup besar buat nanem pohon beneran, bukan cuma pot kecil.",
+      "Total ada ratusan pohon, ribuan semak, dan tanaman lain yang nyerap CO2 dan partikel polusi dari udara Milan.",
+      "Vegetasi ini juga bantu ngatur suhu dalam ruangan — jadi peneduh pas musim panas, tapi daunnya rontok pas musim dingin biar cahaya matahari tetep masuk.",
+      "Proyek ini sering disebut 'hutan vertikal' pertama di dunia dan jadi inspirasi buat proyek serupa di kota-kota lain."
+    ],
+    closing: "Densitas kota tinggi bukan berarti harus kehilangan ruang hijau. Bosco Verticale ngebuktiin dua-duanya bisa jalan bareng.",
+    hashtags: ["#arsitekturhijau", "#boscoverticale", "#stefanoboeri", "#verticalforest", "#greenarchitecture"]
+  },
+  {
+    category: "adaptive-reuse",
+    project_name: "Tate Modern",
+    location: "London, Inggris",
+    architect_firm: "Herzog & de Meuron",
+    source_url: "https://www.archdaily.com",
+    hook: "Museum seni kontemporer paling ikonik di London ini dulunya pembangkit listrik yang udah mati total. Plot twist-nya lumayan gede.",
+    points: [
+      "Bangunan aslinya, Bankside Power Station, ditinggalin begitu aja tahun 1980-an setelah berhenti operasi.",
+      "Herzog & de Meuron milih buat nggak ngubah total bentuk luar bangunan — cerobong bata raksasanya tetep dipertahankan jadi landmark.",
+      "Turbine Hall yang dulu tempat mesin generator raksasa, sekarang jadi ruang pamer instalasi seni skala masif yang nggak bisa ditampung museum biasa.",
+      "Proyek ini jadi salah satu contoh paling sering dirujuk soal gimana bangunan industrial bisa 'diselamatkan' jadi ruang budaya, bukan digusur."
+    ],
+    closing: "Kadang bangunan lama nggak butuh dirobohin, cuma butuh dilihat dengan cara yang beda.",
+    hashtags: ["#adaptivereuse", "#tatemodern", "#herzogdemeuron", "#arsitektur", "#revitalisasi"]
+  },
+  {
+    category: "adaptive-reuse",
+    project_name: "CaixaForum Madrid",
+    location: "Madrid, Spanyol",
+    architect_firm: "Herzog & de Meuron",
+    source_url: "https://www.archdaily.com",
+    hook: "Bangunan pembangkit listrik tua ini sekarang 'ngambang' — bagian bawahnya sengaja dikosongin biar keliatan kayak melayang.",
+    points: [
+      "Bangunan bata aslinya, bekas pembangkit listrik dari awal abad ke-20, dipertahanin strukturnya, tapi bagian dasarnya digali dan dikosongin.",
+      "Efeknya, massa bangunan bata raksasa itu keliatan kayak ngambang beberapa meter di atas plaza — dramatis banget kalau dilihat langsung.",
+      "Di sebelahnya ada 'vertical garden' setinggi bangunan yang didesain botanis Patrick Blanc, jadi elemen hijau kontras sama bata merah.",
+      "Sekarang bangunan ini jadi pusat kebudayaan dan pameran seni, salah satu yang paling rame dikunjungi di Madrid."
+    ],
+    closing: "Ngambangin bangunan bata seberat itu jelas bukan hal gampang, tapi hasilnya bikin orang berhenti dan mikir dua kali soal apa itu 'renovasi'.",
+    hashtags: ["#adaptivereuse", "#caixaforum", "#herzogdemeuron", "#arsitektur", "#madrid"]
+  },
+  {
+    category: "cultural",
+    project_name: "Guggenheim Museum Bilbao",
+    location: "Bilbao, Spanyol",
+    architect_firm: "Frank Gehry",
+    source_url: "https://www.archdaily.com",
+    hook: "Satu bangunan ini literally ngubah nasib satu kota. Istilah 'Bilbao Effect' lahir gara-gara museum ini.",
+    points: [
+      "Sebelum museum ini dibangun tahun 1997, Bilbao itu kota industri yang lagi lesu ekonominya pasca-penurunan sektor pelabuhan dan baja.",
+      "Bentuk lengkung-lengkung titaniumnya yang eksperimental bikin bangunan ini jadi berita di seluruh dunia sebelum orang bahkan liat isinya.",
+      "Turis mulai berbondong-bondong dateng cuma buat liat arsitekturnya, dan itu bikin ekonomi lokal Bilbao pelan-pelan bangkit lagi.",
+      "Fenomena 'satu bangunan ikonik bisa nge-revive satu kota' ini sekarang jadi studi kasus wajib di sekolah arsitektur dan urban planning."
+    ],
+    closing: "Ini contoh nyata kalau desain yang berani itu bukan cuma soal estetika, tapi bisa punya dampak ekonomi yang literally kerasa.",
+    hashtags: ["#guggenheim", "#frankgehry", "#bilboeffect", "#arsitektur", "#museumdesign"]
+  },
+  {
+    category: "cultural",
+    project_name: "National Museum of Qatar",
+    location: "Doha, Qatar",
+    architect_firm: "Jean Nouvel",
+    source_url: "https://www.archdaily.com",
+    hook: "Bentuk bangunan ini terinspirasi dari kristal batu gurun yang namanya 'desert rose'. Sains ketemu seni dalam satu gedung.",
+    points: [
+      "Ratusan lempeng cakram raksasa disusun saling tumpuk dan berpotongan, niru bentuk kristal 'mawar gurun' yang kebentuk alami dari pasir dan air garam.",
+      "Fasadnya sengaja dibikin non-simetris dan nggak beraturan, kontras banget sama gedung-gedung kaca kotak yang biasa kita liat di kota modern.",
+      "Interiornya nyeritain sejarah dan budaya Qatar lewat ruang pameran yang ngikutin lekukan bentuk cakram, jadi alur ceritanya immersive.",
+      "Struktur segini kompleks butuh teknologi pemodelan digital canggih buat mastiin tiap panel nyambung presisi."
+    ],
+    closing: "Kadang inspirasi desain paling kuat justru datang dari sesuatu yang udah ada di alam, tinggal ditangkep dan diterjemahin ulang.",
+    hashtags: ["#jeannouvel", "#nationalmuseumofqatar", "#arsitektur", "#culturaldesign", "#doha"]
+  },
+  {
+    category: "urban",
+    project_name: "The High Line",
+    location: "New York, AS",
+    architect_firm: "James Corner Field Operations & Diller Scofidio + Renfro",
+    source_url: "https://www.archdaily.com",
+    hook: "Rel kereta barang yang udah mati dan mau dibongkar ini malah disulap jadi taman gantung sepanjang 2,3 km di tengah Manhattan.",
+    points: [
+      "Rel ini dulunya jalur kereta barang aktif dari tahun 1930-an, tapi berhenti dipakai tahun 1980 dan hampir dirobohin.",
+      "Warga sekitar yang ngelawan rencana pembongkaran, ngedorong ide buat ngubahnya jadi ruang publik ketimbang digusur.",
+      "Sekarang jalur ini jadi taman elevated yang motong lewat antar gedung, lengkap sama vegetasi liar yang sengaja dipertahanin biar kesan 'alami tumbuh sendiri' tetep ada.",
+      "Proyek ini jadi salah satu pemicu tren 'linear park' di kota-kota lain di dunia yang punya infrastruktur mati serupa."
+    ],
+    closing: "Infrastruktur yang udah 'mati' ternyata masih bisa punya kehidupan kedua, asal ada yang berani liat potensinya.",
+    hashtags: ["#highline", "#urbandesign", "#adaptivereuse", "#landscapearchitecture", "#newyork"]
+  },
+  {
+    category: "urban",
+    project_name: "Superkilen Park",
+    location: "Kopenhagen, Denmark",
+    architect_firm: "BIG, Topotek1 & Superflex",
+    source_url: "https://www.archdaily.com",
+    hook: "Taman ini isinya barang-barang dari 60+ negara — dari tong sampah Botswana sampai neon sign dari Qatar. Random tapi ada maksudnya.",
+    points: [
+      "Superkilen dibangun di area Nørrebro, Kopenhagen, yang penduduknya berasal dari puluhan negara berbeda — salah satu lingkungan paling multikultural di kota itu.",
+      "Alih-alih desain 'netral', tim desainnya justru ngajak warga sekitar milih objek-objek dari negara asal mereka buat dipajang di taman.",
+      "Hasilnya: tempat duduk dari Brazil, tiang lampu dari Rusia, sampai gawang bola dari Basque, semua nyampur jadi satu ruang publik.",
+      "Taman ini dibagi tiga zona warna (merah, hitam, hijau) yang masing-masing punya fungsi dan suasana beda."
+    ],
+    closing: "Ruang publik paling hidup itu biasanya bukan yang paling rapi, tapi yang paling nyeritain siapa yang make-nya.",
+    hashtags: ["#superkilen", "#urbandesign", "#big", "#publicspace", "#landscapearchitecture"]
+  },
+  {
+    category: "material",
+    project_name: "Metropol Parasol",
+    location: "Seville, Spanyol",
+    architect_firm: "Jürgen Mayer H.",
+    source_url: "https://www.archdaily.com",
+    hook: "Struktur kayu ini disebut yang terbesar di dunia, dan bentuknya emang literally kayak jamur raksasa nutupin satu alun-alun kota.",
+    points: [
+      "Warga lokal manggil bangunan ini 'Las Setas' alias 'jamur-jamur' karena bentuk payungnya yang bergelombang.",
+      "Strukturnya pake laminated timber (kayu lapis rekayasa) dengan pola geometris yang rumit, dibantu software parametrik buat ngitung tiap sambungannya.",
+      "Di bawahnya ada pasar dan plaza publik, di tengahnya museum arkeologi yang nampilin reruntuhan Romawi yang ditemukan pas proses konstruksi, dan di atasnya ada jalur pandang buat liat kota dari ketinggian.",
+      "Proyek ini jadi salah satu contoh paling sering dirujuk soal potensi kayu buat struktur skala besar, bukan cuma buat bangunan kecil."
+    ],
+    closing: "Kayu sering dianggap material 'lama', tapi Metropol Parasol nunjukin dia bisa jadi paling futuristik kalau dieksekusi dengan cara yang tepat.",
+    hashtags: ["#metropolparasol", "#timberarchitecture", "#materialinnovation", "#arsitektur", "#seville"]
+  },
+  {
+    category: "material",
+    project_name: "Centre Pompidou-Metz",
+    location: "Metz, Prancis",
+    architect_firm: "Shigeru Ban",
+    source_url: "https://www.archdaily.com",
+    hook: "Atapnya berbentuk kayak topi anyaman raksasa, dan itu bukan metafora doang — beneran pake struktur kayu berpola heksagonal yang dianyam.",
+    points: [
+      "Atap bangunan ini terinspirasi dari topi bambu tradisional Tiongkok yang pernah dibeli Shigeru Ban di Paris.",
+      "Pola heksagonal kayunya membentang sampai 90 meter tanpa kolom penyangga di tengah, jadi ruang pamer di bawahnya lega total.",
+      "Material kayu dipilih bukan cuma buat estetika, tapi juga karena lebih ringan dan lebih cepat dirakit dibanding struktur baja sekelas itu.",
+      "Shigeru Ban sendiri emang dikenal sering eksperimen sama material 'nggak biasa' buat struktur besar, termasuk kertas dan bambu di proyek-proyek lain."
+    ],
+    closing: "Inspirasi desain kadang datang dari benda paling sederhana — tinggal gimana caranya nerjemahin itu ke skala arsitektur.",
+    hashtags: ["#centrepompidoumetz", "#shigeruban", "#timberstructure", "#arsitektur", "#materialinnovation"]
+  },
+  {
+    category: "interior",
+    project_name: "Prada Aoyama",
+    location: "Tokyo, Jepang",
+    architect_firm: "Herzog & de Meuron",
+    source_url: "https://www.archdaily.com",
+    hook: "Toko flagship ini fasadnya kaca berlian, tapi yang bikin orang beneran mangap justru interior tabung kacanya.",
+    points: [
+      "Dari luar, fasad kaca berbentuk pola berlian ini udah jadi landmark di distrik Aoyama, Tokyo.",
+      "Di dalam, ada tabung-tabung kaca cembung dan cekung yang berfungsi sebagai fitting room sekaligus display, ngasih efek distorsi visual yang unik.",
+      "Lantainya didesain miring dan berundak-undak, jadi area belanja terasa kayak lanskap, bukan sekadar toko datar biasa.",
+      "Interior ini jadi contoh gimana ruang retail bisa didesain sebagai pengalaman spasial, bukan cuma tempat naruh barang dagangan."
+    ],
+    closing: "Kalau interior bisa bikin orang berhenti sekadar buat 'ngerasain ruangnya', itu tandanya desainnya udah kerja lebih dari sekadar fungsi.",
+    hashtags: ["#pradaaoyama", "#herzogdemeuron", "#interiordesign", "#retaildesign", "#tokyo"]
+  },
+  {
+    category: "interior",
+    project_name: "Apple Park Visitor Center",
+    location: "Cupertino, AS",
+    architect_firm: "Foster + Partners",
+    source_url: "https://www.archdaily.com",
+    hook: "Interior ruang publik ini didesain literally minim banget — tapi justru kesederhanaannya yang bikin tiap detail kerasa disengaja.",
+    points: [
+      "Kaca lengkung raksasa jadi elemen utama, dibikin nyaris tanpa sambungan visible biar batas antara dalam dan luar ruangan kerasa kabur.",
+      "Material yang dipakai dibatasi banget — kaca, kayu netral, dan logam — biar fokus tetap ke proporsi ruang, bukan ke dekorasi.",
+      "Furnitur dan display dirancang custom biar proporsinya pas sama skala arsitekturnya, nggak ada elemen 'template' yang numpang lewat.",
+      "Pendekatan minimalis kayak gini butuh presisi konstruksi ekstra tinggi, karena nggak ada detail berlebih buat 'nutupin' ketidaksempurnaan."
+    ],
+    closing: "Desain minimalis itu kelihatannya gampang, padahal butuh kontrol detail yang jauh lebih ketat dibanding desain yang ramai.",
+    hashtags: ["#applepark", "#fosterpartners", "#interiordesign", "#minimalism", "#arsitektur"]
+  },
+  {
+    category: "small-scale",
+    project_name: "House NA",
+    location: "Tokyo, Jepang",
+    architect_firm: "Sou Fujimoto",
+    source_url: "https://www.archdaily.com",
+    hook: "Rumah ini nyaris transparan total — dindingnya kaca semua, lantainya bertingkat-tingkat kecil kayak pohon. Privasi? Ceritanya beda.",
+    points: [
+      "Dibangun di lahan sempit khas Tokyo, rumah ini justru milih buka diri lewat dinding kaca di semua sisi, bukan nutup rapat kayak rumah kota pada umumnya.",
+      "Alih-alih lantai datar per level, ruangnya dibagi jadi platform-platform kecil dengan ketinggian beda-beda, total ada puluhan level mini dalam satu rumah.",
+      "Penghuni harus 'milih' seberapa privat mereka mau, karena tirai jadi satu-satunya lapisan privasi tambahan, bukan dinding solid.",
+      "Konsepnya nantang definisi standar soal apa itu 'ruang privat' di rumah tinggal skala kecil."
+    ],
+    closing: "Rumah kecil nggak harus berarti ruang yang membosankan — kadang justru keterbatasan lahan yang ngelahirin ide paling nyeleneh.",
+    hashtags: ["#houseNA", "#soufujimoto", "#tinyhouse", "#arsitektur", "#tokyo"]
+  },
+  {
+    category: "small-scale",
+    project_name: "MUJI Hut",
+    location: "Jepang (produk prefab)",
+    architect_firm: "MUJI (Naoto Fukasawa, Jasper Morrison, Tokujin Yoshioka)",
+    source_url: "https://www.archdaily.com",
+    hook: "Bayangin beli 'rumah' semudah beli furnitur — tinggal pilih desain, dikirim, dirakit. Itu literally konsep di balik hut kecil ini.",
+    points: [
+      "MUJI Hut adalah rumah kecil prefabrikasi berukuran sekitar 9 meter persegi, dirancang biar bisa diproduksi dan dikirim kayak produk retail biasa.",
+      "Ada tiga varian desain dari tiga desainer berbeda, tapi semuanya pegang prinsip yang sama: minimalis, fungsional, nggak ada ornamen berlebih.",
+      "Konsepnya ditujukan buat siapa aja yang butuh ruang tambahan kecil — kantor mini, rumah liburan, sampai unit darurat pasca-bencana.",
+      "Ide 'rumah sebagai produk yang bisa dibeli langsung' ini nunjukin ke mana arah masa depan hunian skala kecil bisa berkembang."
+    ],
+    closing: "Kalau furnitur bisa didesain sebaik ini, kenapa rumah kecil nggak bisa didekati dengan cara yang sama?",
+    hashtags: ["#mujihut", "#tinyhouse", "#prefabricated", "#arsitektur", "#smallscale"]
+  }
+];
+
+let recentlyShown = [];
+let sheetCounter = 0;
+
+function pickThread(catKey){
+  let pool = catKey === 'random'
+    ? THREAD_BANK
+    : THREAD_BANK.filter(t => t.category === catKey);
+
+  if(pool.length === 0) pool = THREAD_BANK;
+
+  let candidates = pool.filter(t => !recentlyShown.includes(t.project_name));
+  if(candidates.length === 0){
+    recentlyShown = [];
+    candidates = pool;
+  }
+
+  const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+  recentlyShown.push(chosen.project_name);
+  if(recentlyShown.length > 6) recentlyShown.shift();
+
+  return chosen;
+}
+
+async function generateThread(){
+  clearStatus();
+  genBtn.disabled = true;
+  genBtn.classList.add('loading');
+  genLabel.textContent = 'Meracik ide...';
+
+  const catKey = pickCategory();
+
+  // small delay purely for a natural "thinking" feel
+  await new Promise(res => setTimeout(res, 350));
+
+  const post = pickThread(catKey === 'random' ? 'random' : catKey);
+  renderSheet(post, post.category);
+
+  genBtn.disabled = false;
+  genBtn.classList.remove('loading');
+  genLabel.textContent = 'Generate Ide Thread Baru';
+}
+const resultsEl = document.getElementById('results');
+const statusBox = document.getElementById('statusBox');
+const genBtn = document.getElementById('genBtn');
+const genLabel = document.getElementById('genLabel');
+const categorySelect = document.getElementById('categorySelect');
+const sheetCountEl = document.getElementById('sheetCount');
+
+function showStatus(msg){
+  statusBox.textContent = msg;
+  statusBox.classList.add('show');
+}
+function clearStatus(){
+  statusBox.classList.remove('show');
+  statusBox.textContent = '';
+}
+
+function pickCategory(){
+  const val = categorySelect.value;
+  if(val === 'random'){
+    const keys = Object.keys(categories);
+    return keys[Math.floor(Math.random() * keys.length)];
+  }
+  return val;
+}
+
+function renderSheet(post, catKey){
+  if(resultsEl.querySelector('.empty-state')){
+    resultsEl.innerHTML = '';
+  }
+
+  sheetCounter++;
+  const sheetId = 'A-' + String(sheetCounter).padStart(2, '0');
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('id-ID', { day:'2-digit', month:'short', year:'numeric' });
+
+  const sheet = document.createElement('div');
+  sheet.className = 'sheet';
+
+  const points = Array.isArray(post.points) ? post.points : [];
+  let threadHtml = `
+    <div class="tpost">
+      <div class="tpost-idx">1</div>
+      <div class="tpost-text hook">${escapeHtml(post.hook || '')}</div>
+    </div>`;
+  points.forEach((p, i) => {
+    threadHtml += `
+    <div class="tpost">
+      <div class="tpost-idx">${i + 2}</div>
+      <div class="tpost-text">${escapeHtml(p)}</div>
+    </div>`;
+  });
+  if(post.closing){
+    threadHtml += `
+    <div class="tpost">
+      <div class="tpost-idx">${points.length + 2}</div>
+      <div class="tpost-text">${escapeHtml(post.closing)}</div>
+    </div>`;
+  }
+
+  const hashtags = Array.isArray(post.hashtags) ? post.hashtags.join(' ') : '';
+  const sourceUrl = post.source_url || '';
+
+  sheet.innerHTML = `
+    <div class="sheet-top">
+      <div>
+        <div class="sheet-num">SHEET ${sheetId}</div>
+        <div class="sheet-cat">${escapeHtml(categoryLabels[catKey] || catKey)}</div>
+        <div class="sheet-title">${escapeHtml(post.project_name || 'Proyek Tanpa Judul')}</div>
+      </div>
+      <div class="sheet-loc">${escapeHtml(post.location || '—')}<br>${escapeHtml(post.architect_firm || '')}</div>
+    </div>
+    <div class="thread">${threadHtml}</div>
+    <div class="hashtags">${escapeHtml(hashtags)}</div>
+    <div class="titleblock">
+      <div class="tb-cell"><div class="tb-label">Sheet No.</div><div class="tb-value">${sheetId}</div></div>
+      <div class="tb-cell"><div class="tb-label">Tanggal</div><div class="tb-value">${dateStr}</div></div>
+      <div class="tb-cell"><div class="tb-label">Sumber</div><div class="tb-value">${sourceUrl ? `<a href="${escapeAttr(sourceUrl)}" target="_blank" rel="noopener">Buka Sumber ↗</a>` : 'Belum ada link'}</div></div>
+      <div class="tb-cell"><div class="tb-label">Format</div><div class="tb-value">Thread</div></div>
+    </div>
+    <div class="sheet-actions">
+      <button class="copy-btn">Salin Teks Thread</button>
+    </div>
+  `;
+
+  sheet.querySelector('.copy-btn').addEventListener('click', (e) => {
+    const fullText = buildPlainText(post);
+    navigator.clipboard.writeText(fullText).then(() => {
+      e.target.textContent = 'Tersalin ✓';
+      setTimeout(() => { e.target.textContent = 'Salin Teks Thread'; }, 1800);
+    });
+  });
+
+  resultsEl.prepend(sheet);
+  sheetCountEl.textContent = 'TOTAL SHEET: ' + sheetCounter;
+}
+
+function buildPlainText(post){
+  let lines = [];
+  lines.push(post.hook || '');
+  (post.points || []).forEach(p => lines.push(p));
+  if(post.closing) lines.push(post.closing);
+  lines.push('');
+  lines.push(`Sumber: ${post.source_url || 'archdaily.com'}`);
+  if(post.hashtags && post.hashtags.length) lines.push((post.hashtags || []).join(' '));
+  return lines.join('\n\n');
+}
+
+function escapeHtml(str){
+  const div = document.createElement('div');
+  div.textContent = str == null ? '' : String(str);
+  return div.innerHTML;
+}
+function escapeAttr(str){
+  return String(str).replace(/"/g, '&quot;');
+}
+
+genBtn.addEventListener('click', generateThread);
+</script>
+</body>
+</html>
