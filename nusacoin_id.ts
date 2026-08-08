@@ -1552,15 +1552,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Tampilkan fitur pengaturan coin atau tidak.</translation>
+        <translation>Peuleumah fitur setting koin atawa hana.</translation>
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
-        <translation>&amp;URL transaksi pihak ketiga</translation>
+        <translation>&amp;URL transaksi pihak keu lhee</translation>
     </message>
     <message>
         <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
-        <translation>Berikut daftar pengaturan yang akan diabaikan oleh perintah pada file konfigurasi :</translation>
+        <translation>Di miyup nyoe nakeuh daftar setting nyang akan geuabaikan le komando lam file konfigurasi :</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1568,7 +1568,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>&amp;Batal</translation>
+        <translation>&amp;Batai</translation>
     </message>
     <message>
         <source>default</source>
@@ -1576,19 +1576,19 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>none</source>
-        <translation>tidak satupun</translation>
+        <translation>hana saboh pih</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Memastikan reset pilihan</translation>
+        <translation>Pastikan opsi reset</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Restart klien diperlukan untuk mengaktifkan perubahan.</translation>
+        <translation>Restart klien peureulee keu geuaktivasi perubahan.</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
-        <translation>Klien akan dimatikan, apakah anda hendak melanjutkan?</translation>
+        <translation>Klien akan ditutop, peu neutem sambong?</translation>
     </message>
     <message>
         <source>Configuration options</source>
@@ -1596,15 +1596,15 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>File konfigurasi digunakan untuk menspesifikkan pilihan khusus pengguna yang akan menimpa pengaturan GUI. Sebagai tambahan, pengaturan command-line apapun akan menimpa file konfigurasi itu.</translation>
+        <translation>File konfigurasi geungui keu geupeuteuntèë opsi khusus ureuëng ngui nyang akan geugantoë pengaturan GUI. Seulaén nibak nyan, peuë mantong setting barih peurintah akan geu-override file konfigurasi.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Terjadi sebuah kesalahan</translation>
+        <translation>Na keusalahan</translation>
     </message>
     <message>
         <source>The configuration file could not be opened.</source>
-        <translation>Berkas konfigurasi tidak dapat dibuka.</translation>
+        <translation>File konfigurasi hana jeuet geubuka.</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
